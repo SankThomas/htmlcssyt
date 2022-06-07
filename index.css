@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem;
+}
+
+.header div h2 {
+  font-size: 1.5rem;
+}
+
+.header .navbar {
+  /* opacity: 0; */
+  position: absolute;
+  left: -100vw;
+  transition: all 0.5s ease-in-out;
+}
+
+.header .navbar.open {
+  left: 0;
+  background-color: #f1f1f1;
+  width: 70%;
+  margin-left: 1.25rem;
+  padding: 1rem;
+}
+
+.header .menu-button:hover {
+  cursor: pointer;
+}
+
+.header .menu-button div {
+  background-color: #333;
+  height: 0.3rem;
+  width: 1rem;
+  margin-top: 0.15rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.header .menu-button div:nth-child(2) {
+  width: 2rem;
+}
+
+.header .menu-button div:last-child {
+  width: 1.5rem;
+}
+
+.header .menu-button.clicked div:first-child {
+  width: 2rem;
+  transform: rotate(40deg);
+}
+
+.header .menu-button.clicked div:nth-child(2) {
+  opacity: 0;
+}
+
+.header .menu-button.clicked div:nth-child(3) {
+  width: 2rem;
+  transform: rotate(-40deg);
+  margin-top: -0.8rem;
+}
+
+@media (min-width: 768px) {
+  .header .navbar {
+    position: relative;
+    left: 0;
+  }
+
+  .header .navbar.open {
+    left: 0;
+    background-color: transparent;
+    width: auto;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .header .menu-button {
+    display: none;
+  }
+}
