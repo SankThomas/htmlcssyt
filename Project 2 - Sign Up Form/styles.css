@@ -1,0 +1,151 @@
+body {
+  color: #3f3d56;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #f1f1f1;
+  padding: 1.25rem;
+  margin: 1.25rem;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.container form h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* 
+Block and inline elements
+
+.container form h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  display: inline;
+}
+
+.container form h3 span {
+  display: block;
+  text-align: center;
+  margin: 3rem 0;
+} */
+
+/* Inline elements: labels, small, button, span, a */
+/* Block elements: Everything else 
+  div, section, all headings, article, aside, figure, header, nav, p
+*/
+
+.container form .form-inner {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 1.25rem; */
+}
+
+.container form .form-inner article {
+  margin-top: 1.25rem;
+}
+
+.container form label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.container form input {
+  /* border-width: 2px;
+  border-style: solid;
+  border-color: #3f3d5691; */
+  border: 2px solid #3f3d5691;
+  border-radius: 0.6rem;
+  outline: none;
+  padding: 0.625rem 1.25rem;
+  width: 100%;
+}
+
+.container form input:focus {
+  border-color: #3f3d56;
+}
+
+.container form .btn {
+  color: #fff;
+  padding: 0.625rem 3rem;
+  font-size: 1rem;
+  background-color: #3f3d56;
+  margin-top: 1.25rem;
+  border: none;
+  outline: none;
+  border-radius: 0.625rem;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.container form .btn:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.checkboxes {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.checkbox {
+  display: none;
+  /* opacity: 0;
+  position: absolute; */
+}
+
+.label {
+  position: relative;
+  background-color: #fff;
+  border-radius: 50px;
+  margin: 0 1.25rem 0 0;
+  width: 50px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.ball {
+  background-color: #3f3d56;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  transition: transform 0.15s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+@media (min-width: 700px) {
+  .container {
+    margin: 1.25rem auto;
+    padding: 2rem;
+  }
+
+  .container form .form-inner {
+    /* grid-template-columns: repeat(2, 1fr); */
+    flex-direction: row;
+  }
+
+  .container form .form-inner article {
+    flex: 1;
+  }
+
+  .container form .form-inner article:not(:last-child) {
+    margin-right: 1.25rem;
+  }
+}
