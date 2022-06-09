@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Project Two Sign Up Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form
+        action="https://formsubmit.co/YOUR_EMAIL"
+        method="POST"
+        autocomplete="off"
+      >
+        <h1>Create an account</h1>
+        <!-- <h2>This is a second heading</h2>
+        <h3>Something here <span>this is something else</span></h3> -->
+
+        <div class="form-inner">
+          <article>
+            <label for="firstName">First name</label>
+            <input type="text" name="firstName" id="firstName" required />
+          </article>
+
+          <article>
+            <label for="lastName">Last name</label>
+            <input type="text" name="lastName" id="lastName" required />
+          </article>
+        </div>
+
+        <div class="form-inner">
+          <article>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </article>
+
+          <article>
+            <label for="dob">Date of birth</label>
+            <input type="date" name="dob" id="dob" required />
+          </article>
+        </div>
+
+        <div class="form-inner">
+          <article>
+            <label for="password-one">Password</label>
+            <input
+              type="password"
+              name="password-one"
+              id="password-one"
+              required
+            />
+          </article>
+
+          <article>
+            <label for="password-two">Confirm password</label>
+            <input
+              type="password"
+              name="password-two"
+              id="password-two"
+              required
+            />
+          </article>
+        </div>
+
+        <div class="checkboxes">
+          <article>
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+              class="checkbox"
+              required
+            />
+            <label for="checkbox" class="label">
+              <div class="ball"></div>
+            </label>
+          </article>
+
+          <small>
+            I have read and agree to the terms of service outlines in the
+            Privacy Policy
+          </small>
+        </div>
+
+        <div class="checkboxes">
+          <article>
+            <input
+              type="checkbox"
+              name="checkbox-two"
+              id="checkbox-two"
+              class="checkbox"
+            />
+            <label for="checkbox-two" class="label">
+              <div class="ball"></div>
+            </label>
+          </article>
+
+          <small>
+            Receive emails about new updates and features. No spam included.
+          </small>
+        </div>
+
+        <button class="btn" type="submit">Create Account</button>
+      </form>
+    </div>
+  </body>
+</html>
