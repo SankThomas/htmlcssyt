@@ -1,0 +1,199 @@
+body {
+  background-color: #d4f9ef;
+}
+
+.btn {
+  background-color: #309dcd;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.625rem 2rem;
+  border-radius: 0.625rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #24789c;
+}
+
+.showcase {
+  background-image: linear-gradient(120deg, #309dcd, #ab4fd7 75%);
+  height: calc(100vh - 0.1px);
+}
+
+.showcase .overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: calc(100vh - 0.1px);
+}
+
+.showcase .overlay h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.showcase .overlay p {
+  color: #fff;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  max-width: 400px;
+}
+
+.cuisine {
+  padding: 4rem 1.5rem;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.cuisine h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #111827;
+}
+
+.cuisine .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.cuisine .cards article {
+  background-color: #fff;
+  padding: 1.25rem;
+  border-radius: 2.5rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.144);
+}
+
+.cuisine .cards article img {
+  border-radius: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.cuisine .cards article h3 {
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.cuisine .cards article p {
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.book {
+  background-image: linear-gradient(90deg, #309dcd, #ab4fd7 75%);
+  max-width: 100%;
+}
+
+.book h2 {
+  color: #fff;
+  max-width: 1300px;
+  margin: 0 auto 2rem;
+}
+
+.book .cards {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.footer {
+  padding: 4rem 1.5rem;
+  background-color: #111827;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.footer-inner h3 {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.footer article ul li {
+  margin-bottom: 1rem;
+}
+
+.footer article ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer article ul li a:focus {
+  outline: 2px dotted #fff;
+}
+
+.footer article ul li a:hover {
+  opacity: 0.75;
+}
+
+@media (min-width: 640px) {
+  .showcase .overlay h1 {
+    font-size: 3rem;
+  }
+
+  .footer-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .cuisine .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .showcase .overlay h1 {
+    font-size: 4rem;
+  }
+
+  .showcase .overlay p {
+    font-size: 1rem;
+    max-width: 600px;
+  }
+
+  .cuisine {
+    padding: 6rem 1.5rem;
+  }
+
+  .cuisine h2 {
+    font-size: 3rem;
+  }
+
+  .cuisine .cards article h3 {
+    font-size: 1.5rem;
+  }
+
+  .cuisine .cards article p {
+    font-size: 1rem;
+  }
+
+  .footer-inner {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .showcase .overlay h1 {
+    font-size: 6rem;
+  }
+
+  .footer-inner {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
