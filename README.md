@@ -2,17 +2,27 @@
 
 This repository contains 11 front-end HTML, CSS and JavaScript projects which include the design files, outlined as follows (in the order in which we will build them):
 
-1. Profile Card Component ![Profile Card Component](./readme-photos/profile-card-component.jpg)
-2. Sign Up Form ![Sign Up Form](./readme-photos/sign-up-form.jpg)
-3. Modal ![Modal](./readme-photos/modal.jpg)
-4. Accordion ![Accordion](./readme-photos/accordion.jpg)
-5. Restaurant Website ![Restaurant Website](./readme-photos/restaurant-website.jpg)
-6. Portfolio Website ![Portfolio Website](./readme-photos/portfolio-website.jpg)
-7. Image Gallery ![Image Gallery](./readme-photos/image-gallery.jpg)
-8. Admin Dashboard ![Admin Dashboard](./readme-photos/admin-portal.jpg)
-9. Fullscreen Background ![Fullscreen Background](./readme-photos/healthcare-website.jpg)
-10. Google Homepage Clone - https://google.com
-11. Techie Website ![Techie Website](./readme-photos/techie-website.jpg)
+### Profile Card Component ![Profile Card Component](./readme-photos/profile-card-component.jpg)
+
+### Sign Up Form ![Sign Up Form](./readme-photos/sign-up-form.jpg)
+
+### Modal ![Modal](./readme-photos/modal.jpg)
+
+### Accordion ![Accordion](./readme-photos/accordion.jpg)
+
+### Restaurant Website ![Restaurant Website](./readme-photos/restaurant-website.jpg)
+
+### Portfolio Website ![Portfolio Website](./readme-photos/portfolio-website.jpg)
+
+### Image Gallery ![Image Gallery](./readme-photos/image-gallery.jpg)
+
+### Admin Dashboard ![Admin Dashboard](./readme-photos/admin-portal.jpg)
+
+### Fullscreen Background ![Fullscreen Background](./readme-photos/healthcare-website.jpg)
+
+### Google Homepage Clone - https://google.com
+
+### Techie Website ![Techie Website](./readme-photos/techie-website.jpg)
 
 ## Challenges
 
